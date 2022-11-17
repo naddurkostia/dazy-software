@@ -1,0 +1,265 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body,
+
+header {
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s linear;
+  background-color: #141312;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e595a;
+  border-radius: 30px;
+  border: 3px solid #282626;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4849;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  color: rgb(197, 184, 184);
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+i {
+  font-family: fontawesome !important;
+  margin-right: 8px;
+}
+
+p {
+  text-align: justify;
+  font-weight: 300;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+li {
+  list-style-type: none;
+  font-weight: 300;
+  color: #e0e0e0;
+}
+
+code {
+  display: block;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #524F52;
+  color: #82CDB9;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 15%;
+  height: 100%;
+  background-color: #252424;
+  border-right: 1px solid #e0e0e0;
+}
+
+nav header {
+  text-align: center;
+  padding: 10% 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+nav .menu__content {
+  padding: 0;
+  overflow: auto;
+  height: 100%;
+}
+
+nav .menu__content li {
+  padding: 4% 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+nav .menu__content li.active {
+  background-color: #2B292B;
+}
+
+nav .menu__content li.active:hover {
+  color: #FFFFFF;
+}
+
+nav .menu__content li.active a {
+  color: #C5B8B8;
+}
+
+nav .menu__content li:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav .menu__content li:first-child {
+  border-top: 1px solid #e0e0e0;
+}
+
+nav .menu__content li:hover {
+  background-color: #464646;
+}
+
+nav .menu__content li:hover a {
+  color: #FFF;
+}
+
+.test {
+  background-color: #00BCD4;
+}
+
+.content {
+  padding: 0 5% 0 20%;
+}
+
+.content a {
+  color: #4d929b;
+  font-weight: 500;
+}
+
+.content .main-section header {
+  margin: 7% 0 2% 0;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #00BCD4;
+}
+
+.content .main-section li:before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: #000;
+  position: relative;
+  top: 15px;
+  right: 20px;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    width: 100%;
+    height: 40px;
+    background-color: #2b3031;
+  }
+
+  nav header {
+    padding: 0 5%;
+    text-align: left;
+    display: inline-block;
+    line-height: 2.5;
+    color: rgb(224, 17, 17);
+  }
+
+  nav .menu__trigger {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+  nav .menu__trigger i {
+    font-size: 30px;
+    color: #FFF;
+  }
+
+  nav .menu__content {
+    background-color: #2B292B;
+    width: 270px;
+    position: absolute;
+    right: -270px;
+    top: 40px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  nav .menu__content li {
+    padding: 3% 0;
+  }
+
+  nav .menu__content li:first-child {
+    border-top: none;
+  }
+
+  nav .menu__content li:last-child {
+    border-bottom: none;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .content {
+    padding: 0 5%;
+  }
+
+  .content .main-section:first-child {
+    padding-top: 5%;
+  }
+
+  .content .main-section header {
+    margin: 5% 0 3% 0;
+  }
+
+  .footer .copyright {
+    padding: 2% 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav .menu__trigger {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  code {
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .content .main-section:first-child {
+    padding-top: 15%;
+  }
+
+  .content .main-section header {
+    margin: 10% 0;
+    font-size: 24px;
+  }
+}
